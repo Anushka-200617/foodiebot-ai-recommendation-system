@@ -1,0 +1,39 @@
+# Python
+.venv/ 
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Database (optional - you might want to include your populated DB)
+# data/foodiebot.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Streamlit
+.streamlit/
+
+# Environment variables
+.env
