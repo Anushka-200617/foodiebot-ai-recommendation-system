@@ -1,151 +1,78 @@
 FoodieBot - AI Food Recommendation System
 
-Complete Database-Driven Conversational AI System for Fast Food Recommendations
+A conversational AI chatbot that provides personalized fast food recommendations through natural language interactions.
 
-Assignment Overview
-Tecnvirons Pvt LTD - AI Food Agent Assignment
-Submission Date: September 16, 2025
-Project Type: Database-Driven Conversational Fast Food System
+Overview
+FoodieBot is an intelligent food recommendation system that understands your preferences and suggests meals from a comprehensive database of 100 fast food items. Built with modern AI technology to deliver personalized dining experiences.
 
-Assignment Phases Completed:
-PHASE 1: Product Data Generation and Database Setup (100 products)
-PHASE 2: Conversational AI with Interest Scoring (0-100%)
-PHASE 3: Smart Recommendation and Analytics System
-
-Quick Start Guide
+Quick Start
 
 Prerequisites:
-- Python 3.8 or higher
-- pip package manager
+Python 3.8+
+pip
 
-Installation and Setup:
-
-1. Clone Repository:
+Installation:
 git clone https://github.com/YOUR_USERNAME/foodiebot-ai-recommendation-system.git
 cd foodiebot-ai-recommendation-system
-
-2. Install Dependencies:
 pip install -r requirements.txt
 
-3. Start API Server:
+Run the application:
 python server.py
-Server runs at: http://localhost:8000
-
-4. Start UI (New Terminal):
 streamlit run streamlit_app.py
-UI opens at: http://localhost:8501
 
-Core Features
+Open http://localhost:8501 to start chatting with FoodieBot.
 
-Advanced Conversational AI:
-- Natural Language Processing: Understands food preferences in plain English
-- Context Memory: Remembers dietary restrictions and conversation history
-- Smart Responses: Generates contextual, engaging responses about food
-- Multi-turn Conversations: Maintains context across multiple exchanges
+Features
 
-Real-Time Interest Scoring (0-100%):
-- Tracks user engagement through conversation analysis
-- Calculates interest based on enthusiasm, questions, and preferences
-- Adjusts recommendations based on interest level
+Conversational AI: Natural language understanding for food preferences
+Smart Recommendations: Context-aware product suggestions based on your taste
+Real-time Interest Tracking: Engagement scoring to improve recommendations
+Comprehensive Database: 100 fast food items across 10 categories
+Dietary Intelligence: Handles restrictions and allergies automatically
+Budget Optimization: Finds options within your price range
+Modern Interface: Clean chat UI with product cards and menu browsing
 
-Smart Recommendation Engine:
-- Preference Matching: Maps keywords to product attributes
-- Dietary Intelligence: Filters for allergies and restrictions
-- Mood-Based Filtering: Matches emotions to product categories
-- Budget Optimization: Finds best value within price range
-- Real-time Queries: Sub-100ms database response time
+Technology Stack
 
-Comprehensive Database:
-- 100 Fast Food Products with complete metadata
-- 10 Categories: Burgers, Pizza, Fried Chicken, Tacos, Sides, Beverages, Desserts, Salads, Breakfast, Specials
-- Rich Data: Ingredients, dietary tags, mood tags, allergens, spice levels
-- SQLite Implementation: Fast, reliable, zero-configuration
-
-Technical Architecture
-
-System Flow:
-User Input → Conversation AI → Interest Calculator → Database Query
-Response Generation ← Smart Recommender ← Product Matcher ← Results Filter
-
-Backend (FastAPI):
-- RESTful API with chat, products, and analytics endpoints
-- Database Integration with optimized SQLite queries
-- Interest Scoring with real-time engagement calculation
-- Smart Filtering with multi-parameter product matching
-
-Frontend (Streamlit):
-- Modern Chat Interface with message bubbles
-- Product Cards with rich information display
-- Menu Browser with category filtering and search
-- Responsive Design for mobile and desktop
-
-Assignment Compliance
-
-100 Products Generated: Creative templates across 10 categories
-Database Integration: SQLite with sub-100ms query performance
-Conversational AI: Context-aware NLP with memory retention
-Interest Scoring (0-100%): Real-time calculation with assignment factors
-Smart Recommendations: Multi-algorithm product matching system
-User Interface: Professional Streamlit chat application
-Analytics Dashboard: Conversation metrics and insights
-Performance Requirements: Sub-100ms queries, concurrent user support
+Backend: FastAPI with SQLite database
+Frontend: Streamlit for interactive web interface
+AI: Natural language processing for conversation understanding
+Database: 100 products with rich metadata (ingredients, dietary tags, spice levels)
 
 Project Structure
 
 foodiebot-ai-recommendation-system/
-│
 ├── README.md
-├── requirements.txt
+├── requirements.txt  
 ├── server.py
 ├── streamlit_app.py
-├── .gitignore
-│
 ├── app/
-│   ├── __init__.py
-│   ├── main.py
-│   │
-│   ├── models/
-│   │   ├── __init__.py
-│   │   └── database.py
-│   │
-│   ├── services/
-│   │   ├── __init__.py
-│   │   ├── ai_service.py
-│   │   ├── scoring_service.py
-│   │   └── recommendation_service.py
-│   │
-│   ├── api/
-│   │   ├── __init__.py
-│   │   └── products.py
-│   │
-│   ├── config/
-│   │   ├── __init__.py
-│   │   └── settings.py
-│   │
-│   └── utils/
-│       └── __init__.py
-│
-├── data/
-│   └── foodiebot.db
-│
-└── scripts/
-    └── generate_products.py
+│   ├── models/database.py
+│   ├── services/ai_service.py
+│   └── services/scoring_service.py
+├── data/foodiebot.db
+└── scripts/generate_products.py
 
+How it Works
 
+Start a conversation about your food preferences
+FoodieBot analyzes your input and tracks engagement
+Smart algorithms match your preferences to products
+Get personalized recommendations with detailed information
+Browse the full menu with filtering options
 
-Usage Examples
+Example Usage
 
-Example Conversations:
-Bot: "Hi! I'm FoodieBot. What food adventure are you craving today?"
-User: "Something spicy and under $15"
-Bot: "Perfect! Korean BBQ Bulgogi Tacos at $9.99 with 6/10 spice level..."
+User: "I want something spicy for under $15"
+FoodieBot: "Perfect! Try our Korean BBQ Bulgogi Tacos at $9.99 with a 6/10 spice level..."
 
-Bot: "What dietary preferences should I know about?"
 User: "I'm vegetarian"
-Bot: "Great! I'll focus on our amazing plant-based options..."
+FoodieBot: "Great! Let me show you our delicious plant-based options..."
 
-API Endpoints:
-/api/chat - Main chat interface with AI responses
+API Endpoints
+
+/api/chat - Main conversation interface
 /api/products - Product search and filtering
-/api/analytics - Conversation metrics and insights
 /docs - Interactive API documentation
+
+Built with Python, FastAPI, Streamlit, and SQLite
