@@ -39,19 +39,7 @@ Frontend: Streamlit for interactive web interface
 AI: Natural language processing for conversation understanding
 Database: 100 products with rich metadata (ingredients, dietary tags, spice levels)
 
-Project Structure
 
-foodiebot-ai-recommendation-system/
-├── README.md
-├── requirements.txt  
-├── server.py
-├── streamlit_app.py
-├── app/
-│   ├── models/database.py
-│   ├── services/ai_service.py
-│   └── services/scoring_service.py
-├── data/foodiebot.db
-└── scripts/generate_products.py
 
 How it Works
 
